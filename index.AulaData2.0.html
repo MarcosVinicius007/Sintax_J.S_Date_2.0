@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Aula Dta 2 .0</title>
+</head>
+
+<body>
+
+    <h1>Aula Data 2 .0</h1>
+
+    <script>
+    
+     //const 
+     //brondate=new Date(1988,0,20,23,57)//esse comando deporou 
+        //console.log(brondate);//esse comando deporou 
+
+       //const  brondate=new Date("jan 20 1988 23 57");//esse comando retorna com data invalida 
+       //console.log(brondate);
+       const brondate=new Date("1988-01-20T23:57:00.000Z")
+      
+       //const brondate=new Date("1988-01-20T23:57:00.000Z")//Obs database e Api's fornrçe data e hora nesse formato
+       //a boa pratica dis q eles tem q fornrcer no formato iso ,q é esse a cima ,sem fuso horário 
+       //console.log(brondate);
+       //console.log(brondate.toISOString("1988-01-20T23:57:00.000Z"))//esse comando não funcionou
+       console.log("dia",brondate.GetDate());//também não funcionou.
+       console.log("mês",brondate.getMonth());
+       console.log("ano",brondate.getFullYear());
+      
+       
+
+      
+
+    
+    </script>
+
+</html>
+</body>
